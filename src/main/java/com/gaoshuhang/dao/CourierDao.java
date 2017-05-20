@@ -13,23 +13,26 @@ public interface CourierDao
 	 * 增加快递员
 	 *
 	 * @param courier 快递员对象,该对象中userId字段应忽略,deleted对象应忽略并置1
+	 * @return 
 	 */
-	public void insertCourier(Courier courier);
+	public int insertCourier(Courier courier);
 
 	/**
 	 * 删除快递员对象
 	 *
 	 * @param courierOpenId 快递员openId
+	 * @return 
 	 */
-	public void deleteCourier(String courierOpenId);
+	public int deleteCourier(String courierOpenId);
 
 	/**
 	 * 根据openId查找快递员,更新快递员对象信息
 	 *
 	 * @param courierOpenId 快递员openId
 	 * @param courier       包含新信息的快递员对象,该对象中userId和openId字段应忽略
+	 * @return 
 	 */
-	public void updateCourier(String courierOpenId, Courier courier);
+	public int updateCourier(String courierOpenId, Courier courier);
 
 	/**
 	 * 根据openId查找快递员

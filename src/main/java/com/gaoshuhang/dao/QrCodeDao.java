@@ -32,4 +32,8 @@ public interface QrCodeDao
 	 */
 	public URL createQrCodeWithUrl(String data);
 
+	BufferedImage createQrCode();
+
+	URL createQrCodeWithUrl();
+
 }

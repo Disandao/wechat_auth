@@ -13,23 +13,26 @@ public interface UserDao
 	 * 增加用户
 	 *
 	 * @param user 用户对象,该对象中userId字段应忽略,deleted对象应忽略并置1
+	 * @return 
 	 */
-	public void insertUser(User user);
+	public int insertUser(User user);
 
 	/**
 	 * 删除用户
 	 *
 	 * @param userOpenId 用户openId
+	 * @return 
 	 */
-	public void deleteUser(String userOpenId);
+	public int deleteUser(String userOpenId);
 
 	/**
 	 * 根据用户openId更新用户信息
 	 *
 	 * @param userOpenId 用户openId
 	 * @param user       包含信息的用户对象,该对象中userId和openId字段应忽略
+	 * @return 
 	 */
-	public void updateUser(String userOpenId, User user);
+	public int updateUser(String userOpenId, User user);
 
 	/**
 	 * 根据用户Id查新用户

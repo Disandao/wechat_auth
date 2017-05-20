@@ -4,21 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Session领域对象,对应数据库字段
- */
+ * Session棰嗗煙瀵硅薄,瀵瑰簲鏁版嵁搴撳瓧娈� */
 public class Session
 {
 	private Long sessionId;
 	private String openId;
 	private Integer state;
 	private Integer group;
-
-	//对应数据库外键,由于应用IO规模比较小,
-	// 方便起见这里不使用懒加载,dao层注意实现
+	
 	private User user;
+	
 	private Courier courier;
 
-	//缓存数据的Map
+
 	private Map<String, Object> dataMap = new HashMap<>();
 
 	public Long getSessionId()

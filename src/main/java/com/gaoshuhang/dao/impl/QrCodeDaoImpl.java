@@ -13,15 +13,25 @@ public class QrCodeDaoImpl implements QrCodeDao
 
 	}
 
-	@Override
 	public BufferedImage createQrCode()
 	{
 		return null;
 	}
 
-	@Override
 	public URL createQrCodeWithUrl()
 	{
+		return null;
+	}
+
+	@Override
+	public BufferedImage createQrCode(String data) {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public URL createQrCodeWithUrl(String data) {
+		// TODO 自动生成的方法存根
 		return null;
 	}
 }
